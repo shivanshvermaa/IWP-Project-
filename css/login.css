@@ -1,0 +1,53 @@
+body
+{
+    background: #2d2d2d;
+    ;
+}
+
+#main
+{
+    width: 1200px;
+    height: 500px;
+    align-items: center;
+}
+
+#loginbox
+{
+    width: 1000px;
+    height: 500px;
+    border: 10px #f1650d solid;
+    box-shadow: 10px 0px 10px #696969;
+}
+
+
+
+
+ul
+{
+    overflow: hidden;
+    position: sticky;
+    list-style-type: none;
+    background: #000000;
+    border-radius: 25px;
+}
+
+li
+{
+    float: left;
+    border-right: #f1650d 2px solid;
+}
+
+li a
+{
+    padding: 10px;
+    color: azure;
+    display: block;
+    text-align: center;
+}
+
+li a:hover
+{
+    color: #f1650d;
+    background-color: azure;
+}
+
