@@ -1,0 +1,48 @@
+body{
+    background: #2d2d2d;
+    ;
+}
+
+#main
+{
+    width: 1200px;
+    height: 800px;
+    align-items: center;
+}
+
+p
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    
+}
+
+
+ul
+{
+    list-style-type: none;
+    position: sticky;
+    overflow: hidden;
+    background: #000000;
+
+    border-radius: 25px;
+   
+}
+
+li
+{
+    float: left;
+    border-right: #f1650d 2px solid;
+}
+
+li a{
+    display: block;
+    padding: 10;
+    color: white;
+    text-align: center;
+}
+
+li a:hover{
+    color: #f1650d;
+    background-color: azure;
+}
