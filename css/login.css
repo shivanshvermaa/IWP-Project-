@@ -17,6 +17,35 @@ body
     height: 500px;
     border: 10px #f1650d solid;
     box-shadow: 10px 0px 10px #696969;
+    clear: both;
+}
+
+#loginboxright
+{
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+
+#loginboxleft
+{
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+
+#loginboxheader
+{
+    font-size: 40px;
+    color: #f1650d;
+}
+
+#loginform
+{
+    padding: 20px;
+    margin: 20px;
 }
 
 
