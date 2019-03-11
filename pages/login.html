@@ -19,7 +19,7 @@
                 <li><a href="#About Us">About Us</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="../pages/login.html">Login</a></li>
-                <li><a href="#Products">Products</a></li>
+                <li><a href="../pages/products.html">Products</a></li>
             </ul>
 
             <div id="loginbox">
@@ -33,15 +33,12 @@
                         <p id="loginboxheader">Login Details</p>
                     </center>
 
-                    <form id="loginform">
-                        Username:<br>
-                        <input type="text" id="login_username">
-                        <br>
-                        Password:<br>
+                    <form id="loginform" action="../php/login.php" method="POST"
+                        <p id="login_text">Username</p>
+                        <input type="text" id="login_username" placeholder="Username">
+                        <p id="login_text">Password</p>
                         <input type="password" id="login_password">
                         <br>
-                        <br>
-
                         <input type="button" id="login_button" value="Login">
                     </form>
 
