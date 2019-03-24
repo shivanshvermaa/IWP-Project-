@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+?>
+
+
+
 <html>
 
 <head>
@@ -17,11 +24,12 @@
                 <li><a href="../pages/homepage.php">Home</a></li>
                 <li><a href="#About Us">About Us</a></li>
                 <li><a href="#Services">Services</a></li>
-                <li><a href="../pages/login.php">Login</a></li>
-                <li><a href="../pages/products.php">Products</a></li>
-            </ul>
-            <img src="../images/background.jpeg" alt="Background" width="1200">
-
+                <?php if(isset($_SESSION['username'])) {     echo '<li><a href="../pages/products.php">Add Requirement</a></li>'; }?>
+                <?php if(isset($_SESSION['username'])) {     echo '<li><a href="../pages/exsisting.php">Exsisting</a></li>'; }?>
+                <?php if(!isset($_SESSION['username'])) {     echo '<li><a href="../pages/login.php">Login</a></li>'; }?>
+                <?php if(!isset($_SESSION['username'])) {     echo '<li><a href="../pages/register.php">Register</a></li>'; }?>
+                <?php if(isset($_SESSION['username'])) {     echo '<li><a href="../pages/php/logout.php">Logout</a></li>'; }?>
+            </ul>   
             <p id="created_by">SHIVANSH VERMA AND SHASHWAT KUMAR</p>
         </div>    
     </center>

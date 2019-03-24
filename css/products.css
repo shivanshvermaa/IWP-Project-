@@ -12,8 +12,9 @@ body{
 
 #product_box
 {
-    width: 1000px;
+    width: 500px;
     height: 500px;
+    border-radius: 100px 0px 100px 0px;
     border: 10px #f1650d solid;
     clear: both;
     text-align: left;
