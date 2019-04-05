@@ -4,6 +4,34 @@
 <head>
     <title>Util</title>
     <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <script>
+    
+    function validation()
+    {
+        var result = true;
+        var fn = document.getElementById('firstname');
+        var ln = document.getElementById('lastname');
+        var un = document.getElementById('username');
+        var cp = document.getElementById('company');
+        var dp = document.getElementById('department');
+
+
+        var fn_check = /[a-zA-Z]/ ;
+
+        if ( !fn_check.test(fn ) ) 
+        {
+            alert("Not a valid username");
+            result=false;
+        }
+
+        return result;
+
+    }
+    
+    
+    </script>
+
+
 </head>
 
 <body scroll="no">
@@ -27,7 +55,7 @@
 
         <div id="product_box">
             <center>
-                <form action="php/registration.php" method="POST">
+                <form action="php/registration.php" method="POST" onsubmit="return( validation() );">
                 <div id="product_box_data">
                     <p id="center_text_boxin" >Registration</p>
 
@@ -83,7 +111,7 @@
                             <br>
 
                             <label class="field a-field a-field_a2 page__field">
-                                <input name = "password" class="field__input a-field__input" placeholder="e.g. melnik909@ya.ru"
+                                <input  type = "password" name = "password" class="field__input a-field__input" placeholder="e.g. melnik909@ya.ru"
                                     required>
                                 <span class="a-field__label-wrap">
                                     <span class="a-field__label">Password</span>
@@ -93,7 +121,7 @@
                             
 
                             <label class="field a-field a-field_a2 page__field">
-                                <input name = "confirm" class="field__input a-field__input" placeholder="e.g. melnik909@ya.ru"
+                                <input type = "password" name = "confirm" class="field__input a-field__input" placeholder="e.g. melnik909@ya.ru"
                                     required>
                                 <span class="a-field__label-wrap">
                                     <span class="a-field__label">Confirm Password</span>
@@ -102,18 +130,9 @@
                             <br>
                             <br>
 
-                            <div class="svg">                                
-                                <a class="button" href="#">
-                                    <svg>
-                                        <rect height="40" width="130" fill="transparent" />
-                                    </svg>
-                                    <span>Submit</span>
-                                </a>
-                            </div>
-
                             <br>
                             <br>
-                            <input type="submit" name="register" value="register">
+                            <button type="submit" id="submit">Register</button>
                         </div>
                     </div>
         </form>

@@ -31,7 +31,7 @@ session_start();
 
             <div id="loginbox">
                 <div align=left id="loginboxright">
-                    <img src="../images/suitandtieleft.jpg" height="500" width="500">
+                    <img src="../images/suitandtieleft.jpg" height="500" width="500" alt="someimages" >
                 </div>
 
                 <div id="loginboxleft">
@@ -64,14 +64,7 @@ session_start();
                         <br>
 
 
-                        <div class="svg">
-                            <a class="button" href="#">
-                                <svg>
-                                    <rect height="40" width="130" fill="transparent" />
-                                </svg>
-                                <span>Submit</span>
-                            </a>
-                        </div>
+                        
 
                         <input type="submit" name="login" value="login">
                     </form>
